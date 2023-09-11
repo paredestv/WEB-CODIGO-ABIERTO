@@ -1,0 +1,203 @@
+/* MAQUETACION.CSS    */
+
+*{
+    /* el * arriba es un selector universal permite */
+    font-family: Arial, Helvetica, sans-serif;      /* tipo de fuentes por defecto */
+}
+
+h4{    /*titulo : Empresa de Servicios */
+    font-size: 30;
+    font-family: 'Times New Roman';
+    color: #520ab1; /* color del titulo */
+}
+
+
+
+
+
+/*  BANNER DE FOTOS ---------------------------------------------------------------*/
+.Banner{
+
+    width: 67%;  /* ancho que ocupa de la pantalla en porcentanje, puede ser en pixel */
+    height: 300px;  /* 300 px es el tamaño del alto del marco de las fotos. */
+    border: 3px solid#FDFD8D;  /* 3 px se fija el borde exterior de las fotos color amarillo */
+    border-radius: 1em;/* fija la terminación del rectando en bordes redondos */
+    
+    
+    float: right;  /*Posiciona los elementos de forma flotante, en este caso las imagenes del banner*/
+    margin-right: 200px; /* define un margen al lado derecho */
+    background-size: 100% 100%; /* especifica que las fotos ocupen un 100% del tamaño asignado */
+    animation-name:banner ;/* nombre de la animacion del banner en el html */
+    animation-duration: 10s;/* indica la cantidad de tiempo que la animación tarda en completar un ciclo (duración),10segundos */
+    animation-iteration-count: infinite;   /* se repite el ciclo de mostrar las imagenes */                                        
+
+    animation-direction: normal;    /* indica si la animación debe retroceder hasta el fotograma de inicio 
+                                       al finalizar la secuencia o si debe comenzar desde el principio
+                                       al llegar al final. 
+                                        animation-direction: alternate; muestra de la ultima a la primera*/
+}   
+   
+
+
+
+/* ahora establecemos las paradas de la animacion, para ello utilizamos KEYFRAMES
+permite a los desarrolladores controlar los pasos intermedios en una secuencia
+de animación CSS, define los puntos de trayectoria.
+como vamos a usar 3 imagenes el 100% lo dividimos en 3 sumando mas los tiempos de duracion
+LAS FOTO1, FOTO2,FOTO3 e porcentajes. */
+@keyframes banner
+{
+    /* definimos la duracion en terminos de porcentaje. La propiedad CSS opacity define la transparencia
+    de un elemento, esto es, en qué grado se superpone el fondo al elemento.  */ 
+    /* la imagen Paisaje1,jpg va a ocupar el 30% de tiempo de fotogramas del total 100% */
+    /* La propiedad CSS background-image establece una o más imágenes de fondo para un elemento. */
+    /* url : Localización de la imagen que se utilizará de fondo. */ 
+    /* Opacity : Define la transparencia de un elemento, esto es, en qué grado se superpone el fondo al elemento. */
+    /*           1 no es transparente, 0.5 es 50% transparente y 0 es completamente transparente.*/
+    /* lOS TIMEPOS SE MIDEN EN PORCENTAJES, SABIENDO QUE MI 100% ES TODO MI TIEMPO  */
+
+    0%, 30% {background-image: url(FOTO1.jpg); opacity: 1;}
+
+    31%, 34% {opacity: 0.5;}   /* definimos un tiempo de 4% del total para tiempo de opacidad */
+
+    35%, 65% {background-image: url(FOTO2.jpg); opacity: 1;}
+
+    66%, 69%{opacity: 0.5;}
+
+    70%, 100% {background-image: url(FOTO3.jpg);opacity: 1;}   
+    
+    /*PARA 4 FOTOS PODRIA USAR 4 TIEMPOS DE 22% =88% Y EL RESTO 12% PARA REPARTIRLO EN LA OPACIDAD     */
+}
+
+
+/*  PARTE   2                   */    
+/*  MENU VAR ---------------------------------------------------------------------------*/    
+
+.Nav{   
+    padding-top: 5; /* deja un espacio entre el menu y section. */
+    margin-left: 250; /* corre el menuvar 250 pixel a partir de la posición izquierda.*/
+}   
+.Menunav{
+    list-style: none;
+    padding: 0;
+    background:  #17202a ;
+    width: 80%;  /*  900 px ancho */
+    max-width: 100%; /* max 1000 px */
+    margin-left:17%;  /* margen left 320 px aqui se cambia el margen izquierdo para correr el menu */
+    margin-top:0 ;  
+}
+
+.Menunav li a{
+    /*se fijan los efectos css a la lista de elementos <li> del menu   */
+    text-decoration: none;
+    background-color:#064892 ; /* color de fondo del menu */
+    color:  #ffffff80 ;  /* color de las letras del menu */
+    padding:10px 15px; /* define los espacios del rectangulo que forman el menuvar */
+    display: block;  /* define un bloque donde encierra al menu principal */
+}
+
+.Menunav li a:hover{
+    background-color:  #d35400 ; /* define el color de fondo cuando se pasa
+                                   el mouse sobre las opciones del menu */
+}
+
+.Menunav > li {
+float: left; /* permite sobreponer de manera flotante el menu */
+}
+
+.Menunav li ul{  /*define las posiciones del menu en la pantalla del navegador */
+    display:none;
+    position: absolute; /* tomará como referencia la ventana del navegador */
+    min-width: 140px;
+    list-style: none; /* sacamos los puntos de menu */
+}
+
+.Menunav li:hover > ul{
+   /*activa cuando el cursor se desplaza sobre la lista de menus y cambia de color */
+    display: block;   
+}
+
+
+
+
+
+/*  PARTE   3
+/*--------------------------------------------------------------------------------------------------*/
+/*  -CONTENIDO (HAEADER-ENCABEZADO, SECTION-SECCIONES,ARTICLE-ARTICUOS,ASIDE-BARRAS LATERALES----------------------------------------------------------------------------------------*/
+/* definimos la clase Contenido definida en el DIV en Html--*/
+
+
+h3{   /* fefinimos <h3>Nuestras Noticias</H3>  */
+    color: #90a2f1; 
+}
+
+/* LLAMAMOS A LA CLASE CONTENIDO   */
+.contenido
+{   /* se definen los espacios de centrado para las secciones, articulos y 
+    barras laterales, contenido va a contener el Section y le Aside */
+   
+   
+    margin-left: 20;
+    
+  
+    margin-top:370 ; /* este deja un espacion entre la primera linea de inicio hasta
+                     donde comienza el .contenido ,en el medio se ubica menunav.
+                      (contenido, seccion y aside) */
+                  
+    height: 800px; /*altura del contenido que encierra al section, article y aside(barra lateral)*/
+    width: 90%; /* cubre el 90% de ancho de la pantalla */
+}
+
+/* DEFINIMOS EL SECTION, LLAMAMOS AL A CLASE SECTION----------------------------------------------------------------------*/
+.section
+{
+    margin-left: 10% ;  /* 140 px left */
+    height: 750;  /* fijamos el alto del section */
+    width: 55%;   /* 700 pxancho, la diferencia lo cubre el Aside(Barra lateral) */
+    padding:1%;
+    border: 3px solid#ae93ee;  /*borde del rectango por fuera*/
+    background:#F2F2F2;
+    /* La propiedad CSS border-radius permite a los desarrolladores Web definir
+     qué tan redondeadas serán las esquinas.*/
+    border-radius: 1em;
+    float:left ;  /* alinea el bloque al lado izquierdo, permitiendo que el aside se ubique arriba,derecha   */
+    overflow: auto;  /*permite poner la barra de desplazamiento scroll */
+}
+    
+    
+
+
+
+/*    PARTE   4   ASIDE, LLAMAMOS A LA CLASE ASIDE -------------------------------------*/    
+.Aside
+{
+    padding:1%;  /* separa el section del aside, un pequeño margen entre ellos  */
+    margin-right: 35px;
+    border: 3px solid#966fe4;  /*borde del rectango por fuera*/
+    height: 750; /* fijamos el alto del Aside dentro del section, para que tengan la misma altura.*/
+    width: 25%;  /*  300px ancho */
+    background:#81DAF5;
+    border-radius: 1em;
+    float: right;
+    
+}
+
+
+
+/*  PARTE   5   FOOTER, LLAMAMOS A LA CLASE FOOTER ----------------------------------------------------------------*/    
+
+
+.Footer{
+    width: 90%px;  
+    margin-left: 5%;
+    margin-right: 5%;  
+    margin:0%;
+  
+    margin-bottom:50 ;  /* fija el espacio entre el margen final del navegado
+                         y el margen de abajo del foter */
+    font-size: 14px;   /* tamaño de la fuente */
+    color: #f8f6fa; /* fuente blanca */
+    background: #064089;; /* fondo azul */
+    border: 3px solid#f5ebeb;  /* tamaño y color del borde blanco */
+    border-radius: 1em; /* terminacion del borde circular */
+}

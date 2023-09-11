@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACTUALIDAD</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos globales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #50705c;
+      }
+
+      header {
+        background-color: hwb(90 31% 37% / 0.918);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(240, 7, 7, 0.1);
+      }
+
+      .noticia {
+        margin-bottom: 20px;
+      }
+
+      .noticia img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .noticia h2 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .noticia p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .noticia a {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .conborde {
+        border: 1px solid hwb(90 95% 1% / 0.918);
+        border-radius: 20px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+    </style>
+    <header>
+      <h1>ACTUALIDAD</h1>
+      <br />
+    </header>
+
+    <main>
+      <section class="noticia">
+        <img
+          src="fake.jpg"
+          alt="Noticia 1"
+          width="300px"
+          height="200"
+          class="conborde"
+        />
+        <h2>EL NEGOCIO DE LAS NOTICIAS FALSAS.</h2>
+        <p>
+          <strong>
+            Las noticias falsas, también conocidas como "fake news", son
+            informaciones engañosas o falsas que se presentan como noticias
+            verídicas.
+            <br> 
+            El negocio de las noticias falsas es una preocupación
+            importante en la era de la información digital, y aunque no es un
+            negocio legítimo, algunas personas y grupos pueden obtener ganancias
+            de diversas maneras a través de la propagación de noticias falsas.
+            <br>
+            Aquí hay algunas formas en que esto puede suceder: 
+            <br>
+            Clickbait y publicidad: Algunos sitios web crean noticias falsas con titulares
+            sensacionalistas para atraer a un gran número de visitantes a sus
+            sitios. Luego, genera ingresos a través de la publicidad en línea,
+            ya que más visitantes pueden aumentar los clics en anuncios.
+            <br>
+            Manipulación política: Otros actores políticos o grupos pueden
+            utilizar noticias falsas para difamar a sus oponentes o promover una
+            narrativa que les beneficie. Esto puede ser parte de una estrategia
+            más amplia para influir en la opinión pública. 
+            <br>
+            Estafas y fraudes: Las noticias falsas también pueden utilizarse para promocionar
+            esquemas fraudulentos o estafas en línea. Las personas pueden ser
+            engañadas para invertir dinero en productos o servicios que no
+            existen o que no son lo que se prometió. 
+            <br>
+            Desinformación deliberada: Ciertos individuos o grupos pueden crear y difundir noticias falsas
+            con la intención de causar confusión, sembrar discordia o socavar la
+            confianza en las instituciones y los medios de comunicación. 
+            <br>
+            Es importante destacar que la propagación de noticias falsas es
+            perjudicial para la sociedad en general, ya que puede llevar a la
+            desinformación y decisiones erróneas por parte del público. Muchos
+            países y plataformas en línea están tomando medidas para combatir la
+            difusión de noticias falsas y mejorar la alfabetización mediática
+            para ayudar a las personas a discernir la información veraz de la
+            falsa.
+          </strong>
+        </p>
+        <a
+          href="https://youtu.be/b78JI7-pEVY?si=JG3iL_ExbnnJj64n"
+          target="_blank"
+          >VER VIDEO</a
+        >
+      </section>
+
+      <section class="noticia">
+        <img
+          src="git.jpeg"
+          alt="Noticia 3"
+          width="400px"
+          height="400"
+          class="conborde"
+        />
+        <h2>COMANDOS DE GIT ESENCIALES.</h2>
+        <p>
+          <strong>
+Aquí tienes una lista de algunos de los comandos más importantes de Git y sus respectivas funciones:
+<br>
+<br>
+
+git init: Inicializa un nuevo repositorio Git en un directorio existente, creando una estructura de control de versiones.
+<br>
+git clone <URL>: Clona un repositorio remoto en tu máquina local, creando una copia local del repositorio completo.
+  <br>
+git add <archivo>: Agrega un archivo al área de preparación (staging area), indicando que deseas incluir sus cambios en el próximo compromiso.
+  <br>
+git commit -m "Mensaje del commit": Crea un commit con los cambios de los archivos en el área de preparación y les asigna un mensaje descriptivo.
+<br>
+git status: Muestra el estado actual del repositorio, incluyendo archivos modificados, en el área de preparación y sin seguimiento.
+<br>
+git log: Muestra el historial de commits realizados en el repositorio, con detalles como autor, fecha y mensaje.
+<br>
+git pull: Obtiene los cambios más recientes desde un repositorio remoto y los fusiona con tu rama actual local.
+<br>
+git push: Envía los commits locales a un repositorio remoto, actualizando la rama remota con tus cambios.
+
+git branch: Muestra una lista de ramas en el repositorio y resalta la rama en la que te encuentras.
+<br>
+git checkout <rama>: Cambia a una rama diferente en el repositorio.
+<br>
+git merge <rama>: Fusiona los cambios de una rama específica en la rama actual.
+<br>
+git remote add <nombre> <URL>: Agrega un enlace remoto con el repositorio para poder interactuar con él.
+<br>
+git diff: Muestra las diferencias entre el directorio de trabajo y el área de preparación.
+<br>
+git reset: Puede utilizarse para quitar archivos del área de preparación o incluso para revertir commits.
+<br>
+git stash: Guarda temporalmente los cambios que no deseas hacer commit en una pila de almacenamiento (stash).
+<br>
+git tag: Permite crear, listar y gestionar etiquetas que señalan compromisos específicos.
+<br>
+git remote -v: Muestra la lista de repositorios remotos configurados para el repositorio local.
+<br>
+<br>
+Estos son solo algunos de los comandos más importantes y útiles en Git. Recuerda que Git es una herramienta poderosa con muchas funcionalidades adicionales, así que te recomiendo explorar más a fondo según tus necesidades específicas.
+</strong>
+        </p>
+        <a
+          href="https://youtu.be/iT4UOkyI09k?si=_flnSWbdy9QG1gP4"
+          target="_blank"
+          >VER VIDEO</a>
+      </section>
+
+      
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Noticias Locales</p>
+    </footer>
+  </body>
+</html>

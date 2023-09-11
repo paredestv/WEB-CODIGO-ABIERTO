@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ciencia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <style>
+      /* Reset de estilos para eliminar márgenes y rellenos predeterminados */
+      body,
+      h1,
+      h2,
+      p,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Estilos globales */
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #50705c;
+      }
+
+      header {
+        background-color: hwb(90 31% 37% / 0.918);
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(240, 7, 7, 0.1);
+      }
+
+      .noticia {
+        margin-bottom: 20px;
+      }
+
+      .noticia img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      .noticia h2 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+
+      .noticia p {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      .noticia a {
+        display: inline-block;
+        margin-top: 10px;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .conborde {
+        border: 1px solid hwb(90 95% 1% / 0.918);
+        border-radius: 20px;
+      }
+
+      footer {
+        text-align: center;
+        background-color: #333;
+        color: #fff;
+        padding: 10px 0;
+      }
+    </style>
+    <header>
+      <h1>CIENCIA</h1>
+      <br />
+    </header>
+
+    <main>
+      <section class="noticia">
+        <img
+          src="api.png"
+          alt="Noticia 1"
+          width="400px"
+          height="300"
+          class="conborde"
+        />
+        <h2>¿QUÉ UNA API?.</h2>
+        <br />
+        <p>
+          <strong>
+            API significa "Interfaz de Programación de Aplicaciones" (por sus
+            siglas en inglés, Application Programming Interface).
+            <br>
+            Es un conjunto de reglas y protocolos que permite que diferentes aplicaciones
+            informáticas se comuniquen entre sí. En esencia, una API define cómo
+            deben interactuar los componentes de software para realizar tareas
+            específicas o acceder a recursos y datos. 
+            <br>
+            Aquí hay algunos puntos claves sobre las API: 
+            <br>
+            <br>
+
+            Comunicación entre Aplicaciones : Las API actúan como intermediarios que permiten que una aplicación solicite
+            ciertas funciones o datos de otra aplicación o servicio sin
+            necesidad de conocer todos los detalles internos de cómo funciona
+            esa aplicación. 
+            <br><br>
+            Abstracción de la Complejidad : Las API ocultan la
+            complejidad subyacente de un sistema y proporcionan una forma
+            simplificada de interactuar con él. Esto facilita el desarrollo de
+            aplicaciones, ya que los desarrolladores no necesitan conocer todos
+            los detalles técnicos de un sistema externo.
+            <br><br>
+            Estándares y Documentación : Las API suelen estar bien documentadas para que los
+            desarrolladores puedan comprender cómo usarlas correctamente. Esto
+            incluye detalles sobre los endpoints (puntos de acceso), los
+            parámetros requeridos, el formato de las respuestas y cualquier
+            autenticación necesaria. 
+            <br><br>
+            Uso común : Las API se utilizan en una
+            amplia variedad de aplicaciones y servicios, desde redes sociales
+            hasta sistemas de pago en línea, sistemas operativos, bases de
+            datos, servicios de mapas y más. 
+            <br><br>
+            Seguridad : Las API pueden incluir
+            medidas de seguridad para proteger los datos y la funcionalidad que
+            proporcionan. Esto puede incluir autenticación, autorización y
+            cifrado de datos.
+            <br>
+            Versionamiento : Las API pueden tener diferentes
+            versiones para permitir cambios y mejoras sin afectar a las
+            aplicaciones que ya las utilizan. Esto garantiza la compatibilidad
+            hacia atrás y facilita las actualizaciones.
+            <br><br>
+            Ejemplos : Un ejemplo
+            común de API es la API de Twitter, que permite a las aplicaciones de
+            terceros publicar tweets y acceder a la línea de tiempo de un
+            usuario. Otra es la API de Google Maps, que permite a las
+            aplicaciones mostrar mapas y direcciones en sus interfaces. 
+            <br><br>
+            En
+            resumen, una API es una herramienta esencial en el desarrollo de
+            software que permite que las aplicaciones se conecten y colaboren de
+            manera efectiva, lo que facilita la creación de aplicaciones más
+            ricas y funcionales al aprovechar servicios y datos externos.
+          </strong>
+        </p>
+        <a href="https://youtu.be/-BhQEntPrFE?si=T0m0eQipi_3J6oei"
+          target="_blank"
+          >VER VIDEO</a>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 Noticias Locales</p>
+    </footer>
+  </body>
+</html>
